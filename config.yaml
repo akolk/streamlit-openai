@@ -1,0 +1,6 @@
+[server]
+enableXsrfProtection = false
+enableCORS = false
+headless = true
+# This is important for HTTPS support behind proxy
+useWebsocketCompression = false
