@@ -6,7 +6,8 @@ if "chat" not in st.session_state:
     st.session_state.chat._tools.append({
                     "type": "mcp",
                     "server_label": "KadasterServer",
-                    "server_url": "https://labs.test.kadaster.nl/mcp/server"
+                    "server_url": "https://labs.test.kadaster.nl/mcp/server",
+                    "require_approval": "never"
                 })
     
     #kadasterserver = streamlit_openai.RemoteMCP(
