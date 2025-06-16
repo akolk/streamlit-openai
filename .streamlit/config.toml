@@ -2,5 +2,6 @@
 enableXsrfProtection = false
 enableCORS = false
 headless = true
+runOnSave = true
 # This is important for HTTPS support behind proxy
 enableWebsocketCompression = false
