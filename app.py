@@ -23,7 +23,8 @@ if "chat" not in st.session_state:
         info_message="Deel geen persoonlijke informatie en AI kan het soms mis hebben.",
         placeholder="Stel je vraag hier ....",
         welcome_message="Hallo ik ben een AI assistent die kan helpen bij verschillende analyses en vragen over je leef omgeving.",
-        mcps=[kadasterserver, cbsserver, thinkingserver]
+        mcps=[kadasterserver, cbsserver, thinkingserver],
+        allow_image_generation=False
     )
 
 st.session_state.chat.run()
