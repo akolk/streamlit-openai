@@ -24,7 +24,9 @@ if "chat" not in st.session_state:
         placeholder="Stel je vraag hier ....",
         welcome_message="Hallo ik ben een AI assistent die kan helpen bij verschillende analyses en vragen over je leef omgeving.",
         mcps=[kadasterserver, cbsserver, thinkingserver],
-        allow_image_generation=False
+        allow_image_generation=False,
+        model="o3",             # Select a reasoning model
+        allow_web_search=False, # Disable web search
     )
 
 st.session_state.chat.run()
