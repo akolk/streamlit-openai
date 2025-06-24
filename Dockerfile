@@ -13,7 +13,7 @@ WORKDIR /app
 # Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN git clone https://github.com/sbslee/streamlit-openai.git xxxx
+#RUN git clone https://github.com/sbslee/streamlit-openai.git xxxx
 RUN git clone --branch 0.1.3-dev https://github.com/sbslee/streamlit-openai.git xxxx
 WORKDIR /app/xxxx
 RUN mv streamlit_openai ../
