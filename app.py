@@ -31,7 +31,7 @@ if "chat" not in st.session_state:
         welcome_message="Hallo ik ben een AI assistent die kan helpen bij verschillende analyses en vragen over je leef omgeving.",
         mcps=[kadasterserver, cbsserver, deepwiki],
         allow_image_generation=True,
-        model=os.getenv("MODEL", "o3")             # Select a reasoning model
+        model=os.getenv("MODEL", "o3"),             # Select a reasoning model
         allow_web_search=False, # Disable web search
     )
 
