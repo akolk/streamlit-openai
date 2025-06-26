@@ -14,17 +14,17 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 #RUN git clone https://github.com/sbslee/streamlit-openai.git xxxx
-RUN git clone --branch 0.1.3-dev https://github.com/sbslee/streamlit-openai.git xxxx
-WORKDIR /app/xxxx
-RUN mv streamlit_openai ../
+#RUN git clone --branch 0.1.3-dev https://github.com/sbslee/streamlit-openai.git xxxx
+#WORKDIR /app/xxxx
+#RUN mv streamlit_openai ../
 #RUN ls -lR
-WORKDIR /app
+#WORKDIR /app
 
 # Copy application files
 COPY app.py .
 #COPY chat.py streamlit_openai/chat.py
 
-RUN ls -lR
+#RUN ls -lR
 
 # Run the Streamlit app
 #CMD ["streamlit", "run", "app.py", "--server.baseUrlPath=\"/chat/\"", "--server.fileWatcherType", "none" ]
