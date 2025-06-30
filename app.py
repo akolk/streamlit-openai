@@ -6,12 +6,14 @@ if "chat" not in st.session_state:
 
     kadasterserver = streamlit_openai.RemoteMCP(
         server_label="kadasterserver",
-        server_url="https://labs.test.kadaster.nl/mcp/server/mcp",
+        server_url="https://labs.test.kadaster.nl/mcp/server/sse",
+        require_approval="never"
     )
 
     cbsserver = streamlit_openai.RemoteMCP(
         server_label="cbsserver",
         server_url="https://labs.test.kadaster.nl/mcp/cbs",
+        require_approval="never"
     )
     
     thinkingserver = streamlit_openai.RemoteMCP(
