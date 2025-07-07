@@ -36,6 +36,12 @@ if "chat" not in st.session_state:
         info_message="Deel geen persoonlijke informatie en AI kan het soms mis hebben.",
         placeholder="Stel je vraag hier ....",
         welcome_message="Hallo ik ben een AI assistent die kan helpen bij verschillende analyses en vragen over je leef omgeving.",
+        example_messages=[
+            "Can you tell me a joke?",
+            "What is the capital of France?",
+            "How do you make a paper airplane?",
+            "What is the weather like today?",
+        ],
         mcps=[kadasterserver, deepwiki, kkgserver],
         allow_image_generation=True,
         model=os.getenv("MODEL", "o3"),             # Select a reasoning model
