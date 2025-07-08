@@ -10,17 +10,6 @@ if "chat" not in st.session_state:
         require_approval="never"
     )
 
-    cbsserver = streamlit_openai.RemoteMCP(
-        server_label="cbsserver",
-        server_url="https://labs.test.kadaster.nl/mcp/cbs",
-        require_approval="never"
-    )
-    
-    thinkingserver = streamlit_openai.RemoteMCP(
-        server_label="thinkingserver",
-        server_url="https://labs.test.kadaster.nl/mcp/sequential-thinking",
-    )
-
     kkgserver = streamlit_openai.RemoteMCP(
         server_label="kkgserver",
         server_url="https://labs.test.kadaster.nl/mcp/kkg",
@@ -37,10 +26,10 @@ if "chat" not in st.session_state:
         placeholder="Stel je vraag hier ....",
         welcome_message="Hallo ik ben een AI assistent die kan helpen bij verschillende analyses en vragen over je leef omgeving.",
         example_messages=[
-            "Can you tell me a joke?",
-            "What is the capital of France?",
-            "How do you make a paper airplane?",
-            "What is the weather like today?",
+            "Wat is de geschatte waarde van mijn huis?",
+            "Wat is de verwachte zonne opwek voor mijn huis?",
+            "Heeft dit adres een gas aansluiting?",
+            "Wat is de gemiddelde woz waarde voor de gemeente?",
         ],
         mcps=[kadasterserver, deepwiki, kkgserver],
         allow_image_generation=True,
