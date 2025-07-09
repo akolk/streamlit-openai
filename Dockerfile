@@ -28,4 +28,4 @@ COPY app.py .
 
 # Run the Streamlit app
 #CMD ["streamlit", "run", "app.py", "--server.baseUrlPath=\"/chat/\"", "--server.fileWatcherType", "none" ]
-CMD ["streamlit", "run", "app.py", "--server.runOnSave=false"]
+CMD ["streamlit", "run", "app.py", "--server.runOnSave=false", "--server.fileWatcherType", "none"]
